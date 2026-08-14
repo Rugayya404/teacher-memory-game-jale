@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Əziz fizika müəllimim üçün</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         BACKGROUND MUSIC
+    ====================================================== -->
+
+    <audio id="background-music" loop>
+
+        <source
+            src="background.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+
+    <!-- =====================================================
+         START SCREEN
+    ====================================================== -->
+
+    <section id="start-screen">
+
+        <div class="physics-symbol">
+            ∑
+        </div>
+
+        <p class="start-label">
+            KİÇİK BİR FİZİKA MACƏRASI
+        </p>
+
+        <h1>
+            Əziz fizika<br>
+            müəllimim üçün
+        </h1>
+
+        <div class="formula-line">
+            F = ma
+        </div>
+
+        <p class="start-description">
+            Bir neçə xatirəni birlikdə kəşf edək.
+        </p>
+
+        <button id="start-button">
+            BAŞLA
+        </button>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         GAME SCREEN
+    ====================================================== -->
+
+    <section id="game-screen">
+
+
+        <div class="game-orbit">
+
+            <span class="orbit-dot"></span>
+
+        </div>
+
+
+        <p class="section-label">
+            XATİRƏ LABORATORİYASI
+        </p>
+
+
+        <h2>
+            Xatirələri uyğunlaşdırın
+        </h2>
+
+
+        <p class="game-description">
+            Hər düzgün cütlük bir xatirənin kilidini açacaq.
+        </p>
+
+
+        <div id="memory-counter">
+
+            AÇILAN XATİRƏLƏR:
+
+            <span id="found-count">
+                0
+            </span>
+
+            / 4
+
+        </div>
+
+
+        <div id="game-board">
+
+            <!-- Kartlar JavaScript ilə yaradılır -->
+
+        </div>
+
+
+
+        <!-- =================================================
+             MEMORY POPUP
+        ================================================== -->
+
+        <div id="memory-popup">
+
+
+            <div id="memory-card">
+
+
+                <div class="memory-symbol">
+                    ⚛
+                </div>
+
+
+                <p class="memory-label">
+                    YENİ XATİRƏ AŞKARLANDI
+                </p>
+
+
+                <h2>
+                    Kilid açıldı!
+                </h2>
+
+
+                <div id="memory-image-container">
+
+                    <img
+                        id="memory-image"
+                        src=""
+                        alt="Xatirə"
+                    >
+
+                </div>
+
+
+                <p id="memory-text">
+                    Yadda saxlamağa dəyər kiçik bir xatirə.
+                </p>
+
+
+                <button id="continue-button">
+                    DAVAM ET
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div id="memory-message">
+            Xatirə açıldı!
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FINAL SCREEN
+    ====================================================== -->
+
+    <section id="final-screen">
+
+
+        <div class="physics-particles">
+
+            <span>F = ma</span>
+
+            <span>E = mc²</span>
+
+            <span>v = s / t</span>
+
+            <span>λ = h / p</span>
+
+        </div>
+
+
+        <div class="final-content">
+
+
+            <p class="final-small">
+                BÜTÜN XATİRƏLƏR AŞKARLANDI
+            </p>
+
+
+            <div class="final-symbol">
+                ∞
+            </div>
+
+
+            <h1>
+                HƏR ŞEY<br>
+                DAVAM EDİR
+            </h1>
+
+
+            <div class="final-line"></div>
+
+
+            <p class="final-message">
+                Bəzi xatirələr zaman keçdikcə yox olmur.
+                Onlar sadəcə bizimlə birlikdə hərəkət etməyə
+                davam edir.
+            </p>
+
+
+            <p class="final-thanks">
+                Hər şey üçün təşəkkür edirəm!
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         LETTER SCREEN
+    ====================================================== -->
+
+    <section id="letter-screen">
+
+
+        <div class="letter-intro">
+
+            <p>
+                SON BİR KİÇİK QEYD...
+            </p>
+
+        </div>
+
+
+
+        <div class="letter-paper">
+
+
+            <div class="letter-top-formula">
+                E = mc²
+            </div>
+
+
+            <div class="letter-symbol">
+                ⚛
+            </div>
+
+
+            <p class="letter-date">
+                05.10.2026
+            </p>
+
+
+            <h2>
+                Dəyərli müəllimim,
+            </h2>
+
+
+
+            <!-- =================================================
+                 LETTER CONTENT
+            ================================================== -->
+
+            <div class="letter-content">
+
+
+                <p>
+                    SİZ HƏR ŞEYİN ƏN YAXŞISINA LAYİQSİNİZ!
+                </p>
+
+
+                <p>
+                    Bəlkə də fizikanın ən gözəl tərəfi bizə
+                    kainatdakı hər şeyin bir səbəbi olduğunu
+                    göstərməsidir. Amma məncə, müəllimliyi
+                    gözəl edən şey yalnız düsturlar və qanunlar
+                    deyil, onların arxasındakı marağı bizə
+                    hiss etdirən insanlardır.
+                </p>
+
+
+                <p>
+                    Siz mənə fizikanı sadəcə bir fənn kimi
+                    öyrətməmisiniz. Hadisələrə başqa cür
+                    baxmağı, sual verməyi və hər şeyin
+                    arxasında bir səbəb axtarmağı da
+                    öyrətmisiniz.
+                </p>
+
+
+                <p>
+                    Bəzən dərsdə dediyiniz sadə bir cümlə,
+                    verdiyiniz bir məsləhət və ya mövzunu
+                    izah etmə tərziniz belə yaddaşımda
+                    qalıb.
+                </p>
+
+
+                <p>
+                    Məncə, yaxşı müəllim yalnız dərsi
+                    öyrədən insan deyil. Yaxşı müəllim
+                    şagirdinin düşüncə tərzində kiçik də
+                    olsa bir iz buraxan insandır.
+                </p>
+
+
+                <p>
+                    Siz də mənim üçün məhz belə
+                    müəllimlərdən birisiniz.
+                </p>
+
+
+                <p>
+                    Bu il bizim son ilimizdir və bunu
+                    düşünəndə bir az qəribə hiss edirəm.
+                    Çünki qarşıda hələ çox dərsimiz,
+                    çoxlu söhbətimiz və xatırlayacağımız
+                    bir çox anımız var.
+                </p>
+
+
+                <p>
+                    Amma bilirəm ki, bir gün bu günlər
+                    bizim üçün sadəcə keçmiş olmayacaq.
+                    Onlar xatirəyə çevriləcək.
+                </p>
+
+
+                <p>
+                    Və mən çox istəyirəm ki, bu xatirələrin
+                    içində sizin dərsləriniz, izahlarınız,
+                    zarafatlarınız və bizə verdiyiniz
+                    motivasiya da olsun.
+                </p>
+
+
+                <p>
+                    Mənə göstərdiyiniz səbrə, verdiyiniz
+                    dəstəyə və öyrətdiyiniz hər şeyə görə
+                    sizə ürəkdən təşəkkür edirəm.
+                </p>
+
+
+                <p>
+                    Ümid edirəm ki, illər sonra geriyə
+                    baxanda mən də sizin xatırladığınız
+                    şagirdlərdən biri olaram.
+                </p>
+
+
+                <p>
+                    Çünki bəzi müəllimlər sadəcə dərs
+                    keçmir. Onlar şagirdlərinin həyatında
+                    kiçik, amma uzun müddət görünən
+                    bir iz qoyurlar.
+                </p>
+
+
+                <p>
+                    Siz də mənim həyatımda belə bir iz
+                    qoymusunuz.
+                </p>
+
+
+                <p>
+                    Yaxşı ki mənim müəllimim olmusunuz.
+                    Yaxşı ki yollarımız kəsişib.
+                    Və yaxşı ki bu hekayə hələ bitməyib.
+                </p>
+
+
+                <p>
+                    Müəllimlər Gününüz mübarək! ❤️
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LETTER ENDING
+            ================================================== -->
+
+            <div class="letter-ending">
+
+
+                <p>
+                    Hörmət və sevgiylə,
+                </p>
+
+
+                <p class="letter-name">
+                    Rüqəyya
+                </p>
+
+
+                <div class="signature-formula">
+                    ∞
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
